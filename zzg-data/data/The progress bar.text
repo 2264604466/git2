@@ -1,0 +1,172 @@
+<div class="content-box">
+            <div class="layui-card main-nav">
+                <div class="layui-breadcrumb" lay-filter="breadcrumb" style="visibility: visible; margin-top: 1px;">
+                    <a lay-href="#">主页</a><span lay-separator="">/</span>
+                    <a><cite>页面</cite></a><span lay-separator="">/</span>
+                    <a><cite>进度条</cite></a>
+                </div>
+            </div>
+            <div class="layui-col-md12 pad">
+                <div class="layui-col-md12 pad">
+                    <div class="layui-card ">
+                        <div class="layui-card-header">默认进度条 </div>
+                        <div class="layui-card-body">
+
+                            <div class="layui-col-xs12">
+                                <div class="layui-progress" style="margin:20px 0px">
+                                    <div class="layui-progress-bar" lay-percent="50%" style="width: 50%;"></div>
+                                </div>
+                                <div class="layui-col-md6 padl">
+                                    <div class="layui-progress" style="margin:20px 0px">
+                                        <div class="layui-progress-bar" lay-percent="50%" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                                <div class="layui-col-md6 padr">
+                                    <div class="layui-progress" style="margin:20px 0px">
+                                        <div class="layui-progress-bar" lay-percent="50%" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="layui-card ">
+                        <div class="layui-card-header">更多颜色进度条 </div>
+                        <div class="layui-card-body">
+                            <div class="layui-col-xs12 mar-t">
+                                <div class="layui-progress mar-tb">
+                                    <div class="layui-progress-bar layui-bg-red" lay-percent="20%" style="width: 20%;">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="layui-progress mar-tb">
+                                    <div class="layui-progress-bar layui-bg-orange" lay-percent="30%"
+                                        style="width: 30%;"></div>
+                                </div>
+
+
+
+                                <div class="layui-progress mar-tb">
+                                    <div class="layui-progress-bar layui-bg-green" lay-percent="40%"
+                                        style="width: 40%;"></div>
+                                </div>
+
+
+
+                                <div class="layui-progress mar-tb">
+                                    <div class="layui-progress-bar layui-bg-blue" lay-percent="50%" style="width: 50%;">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="layui-progress mar-tb">
+                                    <div class="layui-progress-bar layui-bg-cyan" lay-percent="60%" style="width: 60%;">
+                                    </div>
+                                </div>
+
+                                <div class="layui-progress layui-progress-big mar-tb">
+                                    <div class="layui-progress-bar" lay-percent="20%" style="width: 20%;"></div>
+                                </div>
+
+
+                                <div class="layui-progress layui-progress-big mar-tb">
+                                    <div class="layui-progress-bar layui-bg-green" lay-percent="35%"
+                                        style="width: 35%;"></div>
+                                </div>
+
+                                <div class="layui-progress layui-progress-big mar-tb">
+                                    <div class="layui-progress-bar layui-bg-cyan" lay-percent="75%" style="width: 75%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="layui-card ">
+                        <div class="layui-card-header">动态改变进度 </div>
+                        <div class="layui-card-body">
+                            <div class="layui-col-xs12 mar-t mar-b">
+                                <div class="layui-progress layui-progress-big" lay-showpercent="true" lay-filter="demo">
+                                    <div class="layui-progress-bar layui-bg-red" lay-percent="0%"></div>
+                                </div>
+
+                                <div class="site-demo-button" style="margin-top: 20px; margin-bottom: 0;">
+                                    <button class="layui-btn site-demo-active" data-type="setPercent">设置50%</button>
+                                    <button class="layui-btn site-demo-active" data-type="loading">模拟loading</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="layui-card ">
+                        <div class="layui-card-header">显示进度比文本 </div>
+                        <div class="layui-card-body">
+                            <div class="layui-col-xs12 mar-t mar-tb">
+                                <div class="layui-progress" lay-showpercent="true">
+                                    <div class="layui-progress-bar" lay-percent="20%" style="width: 20%"></div>
+                                </div>
+
+                                <br>
+
+                                <div class="layui-progress" lay-showpercent="true">
+                                    <div class="layui-progress-bar" lay-percent="5 / 10" style="width: 50%"></div>
+                                </div>
+
+                                <br>
+
+                                <div class="layui-progress layui-progress-big" lay-showpercent="true">
+                                    <div class="layui-progress-bar" lay-percent="70%" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            layui.use('element', function () {
+                var $ = layui.jquery,
+                    element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+
+                //触发事件
+                var active = {
+                    setPercent: function () {
+                        //设置50%进度
+                        element.progress('demo', '50%')
+                    },
+                    loading: function (othis) {
+                        var DISABLED = 'layui-btn-disabled';
+                        if (othis.hasClass(DISABLED)) return;
+
+                        //模拟loading
+                        var n = 0,
+                            timer = setInterval(function () {
+                                n = n + Math.random() * 10 | 0;
+                                if (n > 100) {
+                                    n = 100;
+                                    clearInterval(timer);
+                                    othis.removeClass(DISABLED);
+                                }
+                                element.progress('demo', n + '%');
+                            }, 300 + Math.random() * 1000);
+
+                        othis.addClass(DISABLED);
+                    }
+                };
+
+                $('.site-demo-active').on('click', function () {
+                    var othis = $(this),
+                        type = $(this).data('type');
+                    active[type] ? active[type].call(this, othis) : '';
+                });
+            });
+        </script>   

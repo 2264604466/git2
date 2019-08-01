@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: green;
+    }
+
+    ul,
+    li,
+    ol {
+        list-style: none;
+    }
+
+    header {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        font: 2rem;
+    }
+
+    ul {
+        width: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    li {
+        width: 25.333%;
+        margin-top: 20px;
+        margin-left: 70px;
+        height: 250px;
+    }
+
+    img {
+        width: 100%;
+        transform: 0.3;
+    }
+
+    footer {
+        clear: both;
+        text-align: center;
+    }
+
+    #play {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+</style>
+
+<body>
+    <header>
+        <span class="othertime">游戏剩余时间：<span id="time">30</span></span>
+        <span class="fenshu">次数：<span id="fs">0</span></span>
+    </header>
+    <ul>
+        <li><img src="./hole.png" alt=""></li>
+        <li><img src="./hole.png" alt=""></li>
+        <li><img src="./hole.png" alt=""></li>
+        <li><img src="./hole.png" alt=""></li>
+        <li><img src="./hole.png" alt=""></li>
+        <li><img src="./hole.png" alt=""></li>
+        <li><img src="./hole.png" alt=""></li>
+        <li><img src="./hole.png" alt=""></li>
+        <li><img src="./hole.png" alt=""></li>
+    </ul>
+    <footer><button id="play">开始游戏</button></footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.js"></script>
+<script>
+    var c, t, prev;
+    $("#play").on('click', function () {
+
+        if ($(this).text() == '开始游戏') {
+            $(this).text('结束游戏')
+            var i = 30,
+                 s = 0;
+            var img = $('img')
+            c = setInterval(function () {
+                $('#time').text(--i);
+                if (i == -1) {
+                    clearInterval(c);
+                    clearInterval(t);
+                    $("#play").text("开始游戏");
+                    alert('您一共击中'+$('#fs').text()+'次'+'获得'+$('#fs').text()+'分')
+                    $('#time').text('30');
+                    $('#fs').text('0');
+                    prev.src = 'hole.png';
+                }
+            }, 1000)
+
+            t = setInterval(function () {
+                if (s == 1) {$(prev).attr('src','hole.png');;$(prev).removeAttr('name');}
+                s = 1;
+                prev = img[Math.floor(Math.random() * 9)];
+                $(prev).attr('src','ds.png');
+               $(prev).attr('name','ds');
+            },(4 + Math.floor(Math.random() * 9)) * 100)
+
+        } else if ($(this).text() == "结束游戏") {
+            clearInterval(c);
+            clearInterval(t);
+            alert('您一共击中'+$('#fs').text()+'次'+'获得'+$('#fs').text()+'分'+'请继续加油😊')
+            $(this).text("开始游戏");
+            $('#time').text('30');
+            $('#fs').text('0');
+            prev.src = 'hole.png';
+        }
+
+        var fengshu = parseInt($('#fs').text())
+
+        $('img').click(function(){
+            if ($('#play').text() != "开始游戏" && $(this).attr('name') == 'ds') {
+                    fengshu += 1;
+                    $('#fs').text(fengshu);
+                }
+        })
+        $('img').on('mousedown', function (e) {
+        e.preventDefault()
+    })
+
+    })
+</script>
+
+</html>

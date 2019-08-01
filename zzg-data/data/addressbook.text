@@ -1,0 +1,340 @@
+  <div class="content-box btn">
+            <div class="layui-card main-nav">
+                <div class="layui-breadcrumb" lay-filter="breadcrumb" style="visibility: visible; margin-top: 1px;">
+                    <a lay-href="#">主页</a><span lay-separator="">/</span>
+                    <a><cite>页面</cite></a><span lay-separator="">/</span>
+                    <a><cite>通讯录</cite></a>
+                </div>
+            </div>
+            <div class="layui-col-md12 pad">
+                <div class="layui-col-md12 pad">
+                    <div class="layui-row layui-col-space15">
+                        <div class="layui-col-md4">
+                            <div class="layui-con-box">
+                                <div class="layui-col-md4">
+                                    <a href="#">
+                                        <div class="layadmin-text-center">
+                                            <img
+                                                src="https://www.layui.com/admin/pro/dist/style/res/template/character.jpg">
+                                            <div class="act">演员</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="layui-col-md8 hg-pad">
+                                    <a href="#">
+                                        <h3 class="hg-title"><strong>
+                                                胡歌
+                                            </strong></h3>
+                                        <p class="hg-text">
+                                            <i class="layui-icon layui-icon-location"></i>
+                                            上海
+                                        </p>
+                                    </a>
+                                    <div class="hg-address">
+                                        <a href="#">
+                                            <strong>Hu Ge studio</strong>
+                                            <br>
+                                            E-mail:xxx@baidu.com
+                                            <br>
+                                            Weibo: https://weibo.com/hu_ge
+                                            <br>
+                                            <addr title="phone">Tel:</addr>
+                                            (123) 456-7890
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-md4">
+                            <div class="layui-con-box">
+                                <div class="layui-col-md4">
+                                    <a href="#">
+                                        <div class="layadmin-text-center">
+                                            <img
+                                                src="https://www.layui.com/admin/pro/dist/style/res/template/character.jpg">
+                                            <div class="act">演员</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="layui-col-md8 hg-pad">
+                                    <a href="#">
+                                        <h3 class="hg-title"><strong>
+                                                胡歌
+                                            </strong></h3>
+                                        <p class="hg-text">
+                                            <i class="layui-icon layui-icon-location"></i>
+                                            上海
+                                        </p>
+                                    </a>
+                                    <div class="hg-address">
+                                        <a href="#">
+                                            <strong>Hu Ge studio</strong>
+                                            <br>
+                                            E-mail:xxx@baidu.com
+                                            <br>
+                                            Weibo: https://weibo.com/hu_ge
+                                            <br>
+                                            <addr title="phone">Tel:</addr>
+                                            (123) 456-7890
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-md4">
+                            <div class="layui-con-box">
+                                <div class="layui-col-md4">
+                                    <a href="#">
+                                        <div class="layadmin-text-center">
+                                            <img
+                                                src="https://www.layui.com/admin/pro/dist/style/res/template/character.jpg">
+                                            <div class="act">演员</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="layui-col-md8 hg-pad">
+                                    <a href="#">
+                                        <h3 class="hg-title"><strong>
+                                                胡歌
+                                            </strong></h3>
+                                        <p class="hg-text">
+                                            <i class="layui-icon layui-icon-location"></i>
+                                            上海
+                                        </p>
+                                    </a>
+                                    <div class="hg-address">
+                                        <a href="#">
+                                            <strong>Hu Ge studio</strong>
+                                            <br>
+                                            E-mail:xxx@baidu.com
+                                            <br>
+                                            Weibo: https://weibo.com/hu_ge
+                                            <br>
+                                            <addr title="phone">Tel:</addr>
+                                            (123) 456-7890
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-md4">
+                            <div class="layui-con-box">
+                                <div class="layui-col-md4">
+                                    <a href="#">
+                                        <div class="layadmin-text-center">
+                                            <img
+                                                src="https://www.layui.com/admin/pro/dist/style/res/template/character.jpg">
+                                            <div class="act">演员</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="layui-col-md8 hg-pad">
+                                    <a href="#">
+                                        <h3 class="hg-title"><strong>
+                                                胡歌
+                                            </strong></h3>
+                                        <p class="hg-text">
+                                            <i class="layui-icon layui-icon-location"></i>
+                                            上海
+                                        </p>
+                                    </a>
+                                    <div class="hg-address">
+                                        <a href="#">
+                                            <strong>Hu Ge studio</strong>
+                                            <br>
+                                            E-mail:xxx@baidu.com
+                                            <br>
+                                            Weibo: https://weibo.com/hu_ge
+                                            <br>
+                                            <addr title="phone">Tel:</addr>
+                                            (123) 456-7890
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-md4">
+                            <div class="layui-con-box">
+                                <div class="layui-col-md4">
+                                    <a href="#">
+                                        <div class="layadmin-text-center">
+                                            <img
+                                                src="https://www.layui.com/admin/pro/dist/style/res/template/character.jpg">
+                                            <div class="act">演员</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="layui-col-md8 hg-pad">
+                                    <a href="#">
+                                        <h3 class="hg-title"><strong>
+                                                胡歌
+                                            </strong></h3>
+                                        <p class="hg-text">
+                                            <i class="layui-icon layui-icon-location"></i>
+                                            上海
+                                        </p>
+                                    </a>
+                                    <div class="hg-address">
+                                        <a href="#">
+                                            <strong>Hu Ge studio</strong>
+                                            <br>
+                                            E-mail:xxx@baidu.com
+                                            <br>
+                                            Weibo: https://weibo.com/hu_ge
+                                            <br>
+                                            <addr title="phone">Tel:</addr>
+                                            (123) 456-7890
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-md4">
+                            <div class="layui-con-box">
+                                <div class="layui-col-md4">
+                                    <a href="#">
+                                        <div class="layadmin-text-center">
+                                            <img
+                                                src="https://www.layui.com/admin/pro/dist/style/res/template/character.jpg">
+                                            <div class="act">演员</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="layui-col-md8 hg-pad">
+                                    <a href="#">
+                                        <h3 class="hg-title"><strong>
+                                                胡歌
+                                            </strong></h3>
+                                        <p class="hg-text">
+                                            <i class="layui-icon layui-icon-location"></i>
+                                            上海
+                                        </p>
+                                    </a>
+                                    <div class="hg-address">
+                                        <a href="#">
+                                            <strong>Hu Ge studio</strong>
+                                            <br>
+                                            E-mail:xxx@baidu.com
+                                            <br>
+                                            Weibo: https://weibo.com/hu_ge
+                                            <br>
+                                            <addr title="phone">Tel:</addr>
+                                            (123) 456-7890
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-md4">
+                            <div class="layui-con-box">
+                                <div class="layui-col-md4">
+                                    <a href="#">
+                                        <div class="layadmin-text-center">
+                                            <img
+                                                src="https://www.layui.com/admin/pro/dist/style/res/template/character.jpg">
+                                            <div class="act">演员</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="layui-col-md8 hg-pad">
+                                    <a href="#">
+                                        <h3 class="hg-title"><strong>
+                                                胡歌
+                                            </strong></h3>
+                                        <p class="hg-text">
+                                            <i class="layui-icon layui-icon-location"></i>
+                                            上海
+                                        </p>
+                                    </a>
+                                    <div class="hg-address">
+                                        <a href="#">
+                                            <strong>Hu Ge studio</strong>
+                                            <br>
+                                            E-mail:xxx@baidu.com
+                                            <br>
+                                            Weibo: https://weibo.com/hu_ge
+                                            <br>
+                                            <addr title="phone">Tel:</addr>
+                                            (123) 456-7890
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-md4">
+                            <div class="layui-con-box">
+                                <div class="layui-col-md4">
+                                    <a href="#">
+                                        <div class="layadmin-text-center">
+                                            <img
+                                                src="https://www.layui.com/admin/pro/dist/style/res/template/character.jpg">
+                                            <div class="act">演员</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="layui-col-md8 hg-pad">
+                                    <a href="#">
+                                        <h3 class="hg-title"><strong>
+                                                胡歌
+                                            </strong></h3>
+                                        <p class="hg-text">
+                                            <i class="layui-icon layui-icon-location"></i>
+                                            上海
+                                        </p>
+                                    </a>
+                                    <div class="hg-address">
+                                        <a href="#">
+                                            <strong>Hu Ge studio</strong>
+                                            <br>
+                                            E-mail:xxx@baidu.com
+                                            <br>
+                                            Weibo: https://weibo.com/hu_ge
+                                            <br>
+                                            <addr title="phone">Tel:</addr>
+                                            (123) 456-7890
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-md4">
+                            <div class="layui-con-box">
+                                <div class="layui-col-md4">
+                                    <a href="#">
+                                        <div class="layadmin-text-center">
+                                            <img
+                                                src="https://www.layui.com/admin/pro/dist/style/res/template/character.jpg">
+                                            <div class="act">演员</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="layui-col-md8 hg-pad">
+                                    <a href="#">
+                                        <h3 class="hg-title"><strong>
+                                                胡歌
+                                            </strong></h3>
+                                        <p class="hg-text">
+                                            <i class="layui-icon layui-icon-location"></i>
+                                            上海
+                                        </p>
+                                    </a>
+                                    <div class="hg-address">
+                                        <a href="#">
+                                            <strong>Hu Ge studio</strong>
+                                            <br>
+                                            E-mail:xxx@baidu.com
+                                            <br>
+                                            Weibo: https://weibo.com/hu_ge
+                                            <br>
+                                            <addr title="phone">Tel:</addr>
+                                            (123) 456-7890
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>

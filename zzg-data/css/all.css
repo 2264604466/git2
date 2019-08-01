@@ -1,0 +1,887 @@
+body,
+nav,
+header,
+main,
+section,
+div,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body,
+nav,
+main {
+    overflow: hidden;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #666;
+    line-height: 24px;
+    overflow-x: visible;
+    font: 14px Helvetica Neue, Helvetica, PingFang SC, Tahoma, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+cite {
+    font-style: normal;
+}
+
+nav a {
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+    position: relative;
+}
+
+
+
+
+nav,
+main,
+header {
+    transition: all 0.3s;
+}
+
+nav {
+    width: 220px;
+    height: 100%;
+    background-color: #20222A;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav .nav-box {
+    height: 100%;
+    width: 237px;
+    overflow-y: scroll;
+}
+
+nav li>a {
+    display: block;
+    color: #b5b5b8;
+    height: 56px;
+    line-height: 40px;
+    padding: 8px 30px 8px 45px;
+    transition: all 0.2s;
+}
+
+nav li>a i {
+    position: absolute;
+    left: 20px;
+    top: 8px;
+}
+
+nav li>a i:before,
+nav li>a span:before {
+    font-size: 16px
+}
+
+.spanSanjiaoX {
+    border: 6px solid;
+    border-color: transparent;
+    position: absolute;
+}
+
+
+nav li a span.nav-ssp {
+    top: 50%;
+    right: 15px;
+    margin-top: -3px;
+    border-color: transparent;
+    border-top-color: rgba(255, 255, 255, .7);
+    transition: all 0.2s;
+}
+
+
+nav a {
+    transition: all 0.2s;
+}
+
+nav a:hover,
+nav dd dd:hover {
+    color: white;
+    transition: all 0.2s;
+}
+
+nav ul {
+    margin-top: 1px;
+    width: 220px;
+}
+
+nav ul>li,
+nav div.Nav-header {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav li dl {
+    display: none;
+    margin: 0;
+    padding: 5px 0;
+    background-color: #16181d;
+}
+
+nav dd {
+    line-height: 40px;
+    position: relative;
+    font-size: 14px;
+    margin: 0;
+}
+
+nav dd dd {
+    padding: 0 30px 0 65px;
+    color: #b5b5b8;
+    transition: all 0.5s;
+}
+
+nav dd>a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0 30px 0 45px;
+    position: relative;
+    color: #b5b5b8;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 40px;
+}
+
+nav li dl>dd>dl>dd>a {
+    padding: 0
+}
+
+#nav-ho {
+    display: block;
+    height: 0px;
+    width: 5px;
+    background-color: #009688;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+nav div.Nav-header {
+    height: 49px;
+    padding: 0 15px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 300;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .15);
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+nav div.Nav-header img {
+    display: none;
+    position: relative;
+    left: -80px;
+}
+
+div.Nav-header span {
+    font-size: 16px;
+    color: rgba(255, 255, 255, .8);
+    line-height: 50px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    min-width: 775px;
+    position: relative;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.3s;
+}
+
+header .header-left li {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    margin: 0 20PX;
+    overflow: hidden;
+}
+
+header li a {
+    display: block;
+    color: #333333;
+    height: 100%;
+    cursor: pointer;
+}
+
+header li a[class] i {
+    position: absolute;
+    right: -18px;
+    top: 0px;
+    font-size: 13px;
+}
+
+header .header-left {
+    position: absolute;
+    left: 220px;
+    padding: 0 10px;
+}
+
+.header-left input {
+    font-size: 14px;
+    display: inline-block;
+    /* vertical-align: middle; */
+    height: 30px;
+    width: 100%;
+    padding-left: 10px;
+    border: none;
+    outline: 0;
+}
+
+input::-webkit-input-placeholder {
+    color: #d2d2d2;
+}
+
+header .header-right {
+    position: absolute;
+    right: 0;
+}
+
+header .header-right a {
+    padding: 0 20px
+}
+
+header .header-right li {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+
+.header-right>li>a>span {
+    top: 50%;
+    right: 3px;
+    transition: all 0.2s;
+    border-top-color: rgba(0, 0, 0, 0.7);
+    margin-top: -3px;
+}
+
+#hea-ho2,
+#hea-ho1 {
+    height: 2px;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+.Head-dl {
+    display: none;
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 55px;
+    margin: 0;
+    min-width: 100%;
+    line-height: 36px;
+    padding: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12);
+    border: 1px solid #d2d2d2;
+    background-color: #fff;
+    z-index: 100;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+
+.Head-dl dd {
+    margin: 0;
+}
+
+.Head-dl dd a {
+    display: block;
+    padding: 0 20px;
+    text-align: center;
+}
+
+
+.text {
+    position: fixed;
+    z-index: 19891015;
+    width: 300px;
+    top: calc(50% - 72px);
+    left: calc(50% - 150px);
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, .3);
+    transition: 0s;
+}
+
+.txt-h {
+    cursor: move;
+    height: 50px;
+    line-height: 50px;
+    border: 0;
+    background-color: #20222A !important;
+    color: #fff;
+    padding: 0 80px 0 20px;
+    border-radius: 2px 2px 0 0;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.txt-b {
+    position: relative;
+    overflow: auto;
+    padding: 20px;
+    line-height: 22px;
+}
+
+
+
+
+
+
+
+
+
+#harbour {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.1);
+    z-index: 1;
+    display: none;
+}
+
+.artBox {
+    width: 300px;
+    height: calc(100% - 50px);
+    position: absolute;
+    right: -300px;
+    top: 50px;
+    bottom: 0;
+    background-color: white;
+    transition: all 0.5s;
+    z-index: 2;
+}
+
+.artBox p {
+    margin-bottom: 10px;
+}
+
+.article-card-header {
+    position: relative;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 15px;
+    border-bottom: 1px solid #f6f6f6;
+    color: #333;
+    border-radius: 2px 2px 0 0;
+    font-size: 14px;
+}
+
+.article-card-body>div {
+    font-size: 0
+}
+
+blockquote {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 15px;
+    line-height: 22px;
+    border-radius: 0 2px 2px 0;
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.article-card-body {
+    position: relative;
+    padding: 11px 14.5px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #666;
+}
+
+.article-btn {
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 18px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #009688;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content-box {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+    position: relative;
+    left: 0;
+    transition: all .3s;
+    overflow-y: scroll;
+}
+
+/* .head-two {
+    width: 100%;
+    height: 50px;
+    background: white;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+    position: relative;
+    top: 1px;
+    left: 0;
+    transition: all .3s;
+}
+
+.head-left-two {
+    width: 350px;
+    height: 50px;
+    margin-left: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.content-down-box {
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.content-down {
+    width: 100%;
+    margin: -7.5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-down-left {
+    width: 66.6%;
+    padding: 7.5px;
+}
+
+.content-down-left-up {
+    margin-bottom: 15px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+}
+
+.TopIntroduction {
+    position: relative;
+    height: 43px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.TopIntroduction a {
+    color: #01AAED;
+}
+
+.Recentupdates-box {
+    width: 100%;
+    padding: 7.5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Recentupdates {
+    width: 33.3%;
+    padding: 7.5px;
+}
+
+.Recentupdates-text {
+    background-color: #f8f8f8;
+    color: #777;
+    padding: 24px;
+}
+
+.Recentupdates-text .Recentupdates-text-top {
+    padding-bottom: 10px;
+}
+
+.Recentupdates-text .Recentupdates-text-top a {
+    color: #333;
+}
+
+.Recentupdates-text .Recentupdates-text-center {
+    height: 44px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.Recentupdates-text .Recentupdates-text-bottom {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Recentupdates-text .Recentupdates-text-bottom a {
+    color: #777;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.Recentupdates-text .Recentupdates-text-bottom span {
+    color: #CCC;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+}
+
+.content-down-left-down {
+    width: 100%;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+}
+
+.TopIntroduction-two {
+    height: 42px;
+    line-height: 42px;
+    padding: 0 15px;
+    border-bottom: 1px solid #f6f6f6;
+    color: #333;
+    border-radius: 2px 2px 0 0;
+    font-size: 14px;
+}
+
+.dynamic-box {
+    position: relative;
+    padding: 10px 15px;
+    line-height: 24px;
+}
+
+.dynamic-box-cen {
+    padding: 0 10px 10px;
+}
+
+.dynamic-box-cen dd {
+    padding: 15px 0;
+    border-bottom: 1px solid #EEE;
+    display: flex;
+}
+
+.dynamic-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #009688;
+    margin-right: 15px;
+}
+
+.dynamic-img a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 32px;
+}
+
+.dynamic-box-cen dd div span {
+    color: #BBB;
+}
+
+.dynamic-box-cen dd div a {
+    color: #01AAED;
+}
+
+.content-down-right {
+    width: 33.3%;
+    padding: 7.5px;
+}
+
+.content-down-right-box {
+    margin-bottom: 15px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+}
+
+.Bottombox {
+    position: relative;
+    padding: 10px 15px;
+    line-height: 24px;
+}
+
+.Bottombox-cen {
+    padding-left: 10px;
+    font-size: 0;
+}
+
+.Bottombox-cen a {
+    display: inline-block;
+    width: 25%;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.Bottombox-cen button {
+    height: 22px;
+    line-height: 22px;
+    padding: 0 5px;
+    font-size: 12px;
+    border: 1px solid #C9C9C9;
+    background-color: #fff;
+    color: #555;
+    vertical-align: top;
+}
+
+.Bottombox-cen-assembly {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Bottombox-cen-assembly li {
+    padding: 10px 0 10px 10px;
+    width: 50%;
+}
+
+.Bottombox-cen-assembly li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.team-img {
+    display: inline-block;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+}
+
+#container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* 组件动画 */
+.pad {
+    padding: 7.5px
+}
+
+.padd {
+    padding: 15px;
+}
+
+.layui-card .padd {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-flow: column;
+}
+
+.dome {
+    margin-bottom: 50px;
+    font-size: 0;
+}
+
+.dome li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 222px;
+    line-height: 25px;
+    padding: 20px 0;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+
+.dome li:hover {
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+.layui-anim {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    margin: 0 auto 10px;
+    text-align: center;
+    background-color: #009688;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50%;
+}
+
+/* 组建按钮 */
+.btn {
+    overflow-y: hidden;
+}
+
+/* 通讯录 */
+.main-nav {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.main-nav .layui-breadcrumb {
+    padding: 0 15px;
+}
+
+.layui-con-box {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e7eaec;
+    overflow: hidden;
+}
+
+.layadmin-text-center {
+    text-align: center;
+}
+
+.layadmin-text-center img {
+    max-width: 80%;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.act {
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.hg-pad {
+    padding-left: 20px; 
+}
+
+.hg-title {
+    margin: 5px 0 10px;
+}
+
+.hg-text {
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.hg-address {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* 面包屑 */
+
+.layui-breadcrumb span[lay-separator] {
+    margin: 0 5px;
+    color: #999;
+}
+
+/* 进度条 */
+
+.padl {
+    padding: 0px 7.5px 0px 0px;
+}
+
+.padr {
+    padding: 0px 0px 0px 7.5px;
+}
+
+.mar-tb {
+    margin-bottom:20px;
+}
+
+.mar-t {
+    margin-top:20px;
+}
+
+.mar-b {
+    margin-bottom:15px;
+}

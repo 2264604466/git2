@@ -1,0 +1,371 @@
+
+
+
+.SE-left,
+.SE-right{
+    box-sizing: border-box;
+    float: left;
+    display: flex;
+    flex-wrap: wrap
+}
+.section-box,
+.main-card{
+    margin: 7.5px;
+    background-color: white;
+    width: calc(100% - 15px);
+    box-sizing: border-box;
+    float: left;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+}
+
+.main-card-body{
+    position: relative;
+    padding: 10px 15px;
+    line-height: 24px;
+}
+.main-card-body-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section .SE-left{
+    width:66.666666%;
+}
+.SE-left .section-box{
+    width: calc(50% - 15px);
+    box-sizing: border-box;
+}
+.zhuye1-ul1,
+.zhuye1-ul2{
+    width: 100%;
+    height: 100%;
+    /* height: 185px; */
+    overflow: hidden;
+}
+.zhuye1-ul1 li{
+    float: left;
+    width: 25%;
+    padding: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    height: 94px;
+}
+.zhuye1-ul1 li a i{    
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 30px;
+    background-color: #F8F8F8;
+    color: #333;
+}
+
+.zhuye1-ul1 li a cite{
+    position: relative;
+    top: 2px;
+    display: block;
+    color: #666;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+}
+.zhuye1-ul2{
+    height: 185px;
+}
+.zhuye1-ul2 li{
+    float: left;
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.zhuye1-ul2 li a{
+    display: block;
+    height: 63.6px;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    color: #999;
+    border-radius: 2px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+ }
+ .zhuye1-ul2 h3{
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+.zhuye1-ul2 p{
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 300;
+    color: #009688;
+    padding: 2.5px 0;
+}
+.main-card-tab{
+    width: 100%;
+    height: 42px;
+    padding: 0 20px;
+
+    position: absolute;
+    top: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2;
+}
+.main-card-tab span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #e2e2e2;
+}
+.main-card-tab .reCo{
+    background-color: #999;
+}
+
+.zhuye1-ul2 .ul2-2{
+    color: #FF5722;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section .SE-right{
+    width:33.333333%;
+} 
+
+.SE-right .main-card-body table{
+    width: 100%;
+    background-color: #fff;
+    color: #666;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.SE-right .main-card:nth-of-type(1) tr td{ 
+    position: relative;
+    padding: 9px 15px;
+    min-height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e6e6e6;
+}
+.SE-right .main-card:nth-of-type(1) tr td:nth-of-type(1){
+    width: 33.33333333%;
+    box-sizing: border-box;
+}
+.SE-right .main-card:nth-of-type(1) a{
+    color: #01AAED;
+    padding-left: 15px;
+}
+.SE-right tr:nth-last-child(1) td:nth-of-type(2){
+    padding-bottom: 0px;
+}
+.SE-right tr:nth-last-child(1) td:nth-of-type(2) div a{
+    color: white;
+}
+.SE-right tr:nth-last-child(1) td:nth-of-type(2) div a:nth-of-type(1){
+    background-color: #FF5722;
+}
+
+/* .SE-right .main-card:nth-of-type(2){
+} */
+.jindubox{
+    margin: 50px 0 60px;
+}
+.jindubox:nth-of-type(2){
+    margin-bottom: 10px;
+}
+
+.jindutiao{
+    position: relative;
+    height: 6px;
+    border-radius: 20px;
+    background-color: #e2e2e2;
+}
+
+.jindutiao h3{
+    position: absolute;
+    right: 0;
+    top: -35px;
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+}
+.jindutiao .jindutiao-jindu{
+    position: relative;
+    top: -35px;
+    line-height: 26px;
+    font-size: 26px;
+    color: #666;
+}
+.SE-right .jindutiao>div{
+    height: 6px;
+    border-radius: 20px;
+    background-color: #5FB878;
+}
+.SE-right .main-card:nth-of-type(2) .jindutiao:nth-of-type(1)>div{
+    width: 65%;
+}
+.SE-right .main-card:nth-of-type(2) .jindutiao:nth-of-type(2)>div{
+    width: 32%;
+}
+.SE-right .main-card:nth-of-type(2) .jindutiao>h3 span{
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border: solid 6px;
+    border-color: transparent;
+    border-top-color: #999;
+    position: relative;
+    top: 4px;
+}
+/* .SE-right .main-card:nth-of-type(3){
+} */
+.SE-right .main-card:nth-of-type(3) .jindutiao:nth-of-type(1)>div{
+    width: 58%;
+}
+.SE-right .main-card:nth-of-type(3) .jindutiao:nth-of-type(2)>div{
+    width: 90%;
+    background-color: #FF5722
+}
+.SE-right .main-card:nth-of-type(2) .main-card-body,
+.SE-right .main-card:nth-of-type(3) .main-card-body{
+    padding-top: 5px;
+} 
+
+/* .SE-right .main-card:nth-of-type(4){
+} */
+.news{
+    width: 100%;
+    height: 60px!important;
+    margin: 5px 0;
+    background-color: #FF5722;
+    line-height: 60px;
+    text-align: center;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.news a{
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.SE-right .main-card:nth-of-type(4) .main-card-body{
+    height: 90px;
+}
+.news:nth-of-type(2){
+    background-color: #009688;
+}
+.news:nth-of-type(3){
+    background-color: #1E9FFF;
+}
+/* .SE-right .main-card:nth-of-type(5){
+} */
+.SE-right .main-card:nth-of-type(5) p{
+    line-height: 22px;
+    text-indent: 2em;
+    margin-bottom: 10px;
+}
+.SE-right .main-card:nth-of-type(5) p:nth-of-type(4){
+    margin-bottom: 0px;
+}
+.SE-right .main-card:nth-of-type(5) p a {
+    color: #01AAED;
+}
+
+
+@media(max-width: 995px) {
+    section .SE-left,
+    section .SE-right{
+        width:100%
+    }
+   
+
+    .SE-left .section-box{
+        width: calc(100% - 15px);
+        box-sizing: border-box;
+    }
+}
